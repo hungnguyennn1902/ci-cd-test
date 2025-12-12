@@ -8,4 +8,11 @@ router.get('/checkstatus', (req, res, next) => {
     })
 })
 
+router.get('/api/welcome', (req, res, next) => {
+    res.status(200).json({
+        status: 'success',
+        message: 'welcome to WSV api'
+    })
+})
+
 module.exports = router;
